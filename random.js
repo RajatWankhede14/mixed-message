@@ -1,0 +1,19 @@
+
+const data = {
+    physicsJokes: ['How many general-relativity theoretists does it take to change a light bulb?: Two. One to hold the bulb and one to rotate space.', "Why can't you trust an atom?: They make up everything.", "What did the quantum physicist say before the bar fight?: Let me atom!", "Where does bad light end up?: In a prism.", "A Higg Bson walks into a Church. The priest says, 'We don't allow Higgs Bosons in here. The particle responds by saying: 'But without me, how can you have MASS?", "A photon checks into a hotel. The bellhop aks, 'Can I help you with your luggage?' The photon replies, 'I don't have any.I'm traveling light!", "Why did Erwin Schrondinger, Paul Dirac and Wolfgang Pauli work in very small garages?: Because they were quantum mechanics.", "What did one uranium-238 nucleus say to the other?: Gotta Split!"],
+    inspirationalQuotes: ["All our dreams can come true, if we have the courage to pursue them. -Walt Disney", "The secret of getting ahead is getting started. -Mark Twain", "Don't limit yourself. Many people limit themeselves to what they think they can do. You can go as far as your mind lets you. What you believe, remember, you can achieve - Mary Kay Ash", "I’ve missed more than 9,000 shots in my career. I’ve lost almost 300 games. 26 times I’ve been trusted to take the game winning shot and missed. I’ve failed over and over and over again in my life and that is why I succeed. -Michael Jordon", "We need to accept that we won’t always make the right decisions, that we’ll screw up royally sometimes – understanding that failure is not the opposite of success, it’s part of success. -Arianna Huffington", "Only the paranoid survive. -Andy Grove", "I wake up every morning and think to myself, ‘how far can I push this company in the next 24 hours. -Leah Busque", "Write it. Shoot it. Publish it. Crochet it, sauté it, whatever. MAKE. -Joss Whedon"],
+    fortuneQuotes: ["I have always believed, and I still believe, that whatever good or bad fortune may come our way we can always give it meaning and transform it into something of value. -Hermann Hesse, Sidhartha", "Seek not greater wealth, but simpler pleasure; not higher fortune, but deeper felicity. -Mahatma Gandhi", "They were things for which it was impossible to prepare but which one spent a lifetime looking back at, trying to accept, interpret, comprehend. Things that should never have happened, that seemed out of place and wrong, these were what prevailed, what endured, in the end. -Jhumpa Lahiri, The Namesake", "Most of us have the good or bad fortune of seeing our lives fall apart so slowly we barely notice. -Carlos Ruiz Zafon, The Shadow of the Wind", "Behind every successful fortune there is a crime. -Mario Puzo, The Godfather", "In Madeleine's face was a stupidity Mitchell had never seen before. It was the stupidity of all normal people. It was the stupidity of the fortunate and the beautiful, of everybody who got what they wanted in life and so remained unremarkable. -Jeffrey Eugenides, The Marriage Plot", "I regained my soul through literature after those times I'd lost it to wild-eyed gypsy girls on the European streets. -Roman Payne, Rooftop Soliloquy", "The crowning fortune of a amn is to be born to some to some pursuit which finds him employment and happiness, whether it be to make baskets, or broadswords, or canals, or statues, or songs. -Ralph Waldo Emerson"]
+};
+
+
+// console.log(data.quotes.length);
+// console.log(data.fortuneQuotes.length);
+function mixedMessage(){
+    const list = ['physicsJokes', 'inspirationalQuotes', 'fortuneQuotes']; 
+    const random1 = Math.floor(Math.random() * 3);
+    const random2 = Math.floor(Math.random() * 8);
+    
+    return data[list[random1]][random2];
+}
+
+console.log(mixedMessage());
